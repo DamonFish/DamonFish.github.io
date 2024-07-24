@@ -3,8 +3,7 @@ layout: post
 title: "压缩图片和视频资源处理"
 subtitle: ""
 author: "DamonFish"
-header-img: "img/post-bg-infinity.jpg"
-header-mask: 0.3
+header-style: text
 mathjax: true
 tags:
   - 工具

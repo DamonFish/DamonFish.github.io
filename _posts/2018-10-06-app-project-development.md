@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "App项目开发最佳实践"
-subtitle: 'App Project Development Best Practices'
+title: "App开发工程化"
+subtitle: ''
 author: "DamonFish"
 header-style: text
 tags:
-  - Project
+  - App开发
+  - 工程管理
 ---
-今天主要讲下面几点：
+App开发工程化，主要是以下几个方面：
 
 1. 规范化（Format，Lint，Sonarcube）
 2. 自动化（CI和CD）

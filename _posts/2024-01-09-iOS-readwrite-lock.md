@@ -3,8 +3,7 @@ layout: post
 title: "iOS 读写锁"
 subtitle: "GCD 实现读写锁注意的坑"
 author: "DamonFish"
-header-img: ""
-header-bg-css: "linear-gradient(to right, #24b94a, #38ef7d);"
+header-style: text
 tags:
   - 多线程
   - 锁

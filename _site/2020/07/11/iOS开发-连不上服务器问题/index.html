@@ -299,7 +299,12 @@
 <h3 id="网络断开">网络断开</h3>
 
 <p>正确的提示即可;
-网络问题的错误码是系统错误，注意和Http status code相关的处理区分开。</p>
+网络问题的错误码是系统错误，<a href="https://developer.apple.com/documentation/foundation/1508628-url_loading_system_error_codes">URL Loading System error codes</a>; 
+注意和HTTP response status codes以及后台定义的业务错误error code，这三种要区分开。</p>
+
+<blockquote>
+  <p>注意： 考虑用户首次进入，没有给网络权限的情况； 比如第三方库的初始化，或者初始配置的获取，在首次获取网络权限后再处理。</p>
+</blockquote>
 
 <h3 id="没找到目标服务器dns解析失败">没找到目标服务器（DNS解析失败）</h3>
 
@@ -484,17 +489,20 @@ NSURLProtol本身实现比较繁琐，多线程问题， 另外还有请求重�
   
   
   
+  <li>
+    <a target="_blank" href="https://github.com/DamonFish">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
   
 </ul>
 
                 <p class="copyright text-muted">
                     Copyright &copy; DamonFish Blog 2024
-                    <!-- <br>
-                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
-                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
-                        height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true">
-                    </iframe> -->
                 </p>
             </div>
         </div>

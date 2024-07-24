@@ -3,8 +3,9 @@ layout: post
 title: "weak-strong dance需注意的点"
 subtitle: ""
 author: "DamonFish"
-header-img: "img/post-bg-infinity.jpg"
-header-mask: 0.3
+# header-img: "img/post-bg-infinity.jpg"
+# header-mask: 0.3
+header-style: text
 mathjax: true
 tags:
   - iOS开发

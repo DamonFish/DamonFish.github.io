@@ -5,8 +5,8 @@
     <description>这里是 DamonFish的Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 16 Jul 2024 15:24:09 +0800</pubDate>
-    <lastBuildDate>Tue, 16 Jul 2024 15:24:09 +0800</lastBuildDate>
+    <pubDate>Wed, 24 Jul 2024 10:27:46 +0800</pubDate>
+    <lastBuildDate>Wed, 24 Jul 2024 10:27:46 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -522,7 +522,12 @@ IP的缓存需要自己处理，当时用的是HappyDNS，七牛提供的一个�
 &lt;h3 id=&quot;网络断开&quot;&gt;网络断开&lt;/h3&gt;
 
 &lt;p&gt;正确的提示即可;
-网络问题的错误码是系统错误，注意和Http status code相关的处理区分开。&lt;/p&gt;
+网络问题的错误码是系统错误，&lt;a href=&quot;https://developer.apple.com/documentation/foundation/1508628-url_loading_system_error_codes&quot;&gt;URL Loading System error codes&lt;/a&gt;; 
+注意和HTTP response status codes以及后台定义的业务错误error code，这三种要区分开。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意： 考虑用户首次进入，没有给网络权限的情况； 比如第三方库的初始化，或者初始配置的获取，在首次获取网络权限后再处理。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;没找到目标服务器dns解析失败&quot;&gt;没找到目标服务器（DNS解析失败）&lt;/h3&gt;
 
@@ -605,7 +610,7 @@ Git 工作流程是团队在使用 Git 进行版本控制时商定的一个统�
 &lt;h2 id=&quot;git-flow&quot;&gt;Git flow&lt;/h2&gt;
 
 &lt;p&gt;最传统的 Git 工作流程。&lt;br /&gt;
-Git flow 通常包含五种类型的分支：Master 分支、Develop 分支、Feature 分支、Release 分支以及 Hotfix 分支。&lt;/p&gt;
+Git flow 通常包含五种类型的分支：&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Master 分支&lt;/strong&gt;：主干分支，也是正式发布版本的分支，包含可以部署到生产环境中的代码。通常情况下，只允许其他分支将代码合入，不允许直接向 Master 分支提交代码（对应生产环境）。&lt;/li&gt;
@@ -785,8 +790,7 @@ TinyPNG对web前端的童鞋再熟悉不过了，详细使用请参考官网。&
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;find /path/to/directory -type f \( -name &apos;*.png&apos; -o -name &apos;*.jpg&apos; \) -size +50k -size -100k -print -exec tinypng -k key {} \;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;key替换成你你申请的tinyPNG 的key
-/path/to/directory 替换成你的资源文件路径&lt;/p&gt;
+&lt;p&gt;key替换成你你申请的tinyPNG 的key， /path/to/directory 替换成你的资源文件路径&lt;/p&gt;
 
 &lt;h2 id=&quot;压缩视频&quot;&gt;压缩视频&lt;/h2&gt;
 
@@ -865,8 +869,8 @@ TinyPNG对web前端的童鞋再熟悉不过了，详细使用请参考官网。&
       </item>
     
       <item>
-        <title>App项目开发最佳实践</title>
-        <description>&lt;p&gt;今天主要讲下面几点：&lt;/p&gt;
+        <title>App开发工程化</title>
+        <description>&lt;p&gt;App开发工程化，主要是以下几个方面：&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;规范化（Format，Lint，Sonarcube）&lt;/li&gt;
@@ -1027,7 +1031,9 @@ UI测试是实用性不佳，另外国内对Accessibility的支持比较少；�
         <link>http://localhost:4000/2018/10/06/app-project-development/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/10/06/app-project-development/</guid>
         
-        <category>Project</category>
+        <category>App开发</category>
+        
+        <category>工程管理</category>
         
         
       </item>

@@ -78,8 +78,8 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
+    
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -208,7 +208,7 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-infinity.jpg" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 
@@ -217,24 +217,17 @@
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-infinity.jpg');
+        background-image: url('/img/home-bg.jpg');
         background: ;
     }
 
-    
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, 0.3);
-    }
     
 </style>
 
 
 
 
-<header class="intro-header" >
+<header class="intro-header style-text" >
 
     <div class="header-mask"></div>
     
@@ -359,8 +352,7 @@ TinyPNG对web前端的童鞋再熟悉不过了，详细使用请参考官网。<
 </pre></td><td class="rouge-code"><pre>find /path/to/directory -type f \( -name '*.png' -o -name '*.jpg' \) -size +50k -size -100k -print -exec tinypng -k key {} \;
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>key替换成你你申请的tinyPNG 的key
-/path/to/directory 替换成你的资源文件路径</p>
+<p>key替换成你你申请的tinyPNG 的key， /path/to/directory 替换成你的资源文件路径</p>
 
 <h2 id="压缩视频">压缩视频</h2>
 
@@ -432,9 +424,9 @@ TinyPNG对web前端的童鞋再熟悉不过了，详细使用请参考官网。<
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2018/10/06/app-project-development/" data-toggle="tooltip" data-placement="top" title="App项目开发最佳实践">
+                        <a href="/2018/10/06/app-project-development/" data-toggle="tooltip" data-placement="top" title="App开发工程化">
                         Previous<br>
-                        <span>App项目开发最佳实践</span>
+                        <span>App开发工程化</span>
                         </a>
                     </li>
                     
@@ -580,17 +572,20 @@ TinyPNG对web前端的童鞋再熟悉不过了，详细使用请参考官网。<
   
   
   
+  <li>
+    <a target="_blank" href="https://github.com/DamonFish">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
   
 </ul>
 
                 <p class="copyright text-muted">
                     Copyright &copy; DamonFish Blog 2024
-                    <!-- <br>
-                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
-                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
-                        height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true">
-                    </iframe> -->
                 </p>
             </div>
         </div>
